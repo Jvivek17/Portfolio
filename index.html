@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compiatable" content = "IE=edge">
+        <meta name = "viewpoint" content = "width = device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel = "stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/35bd85cbf6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id = "header">
+            <div class="container">
+                <nav>
+                    <img src="Images/Logo 1.png", class="logo"> 
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class = "header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, i'm <span>Vivek</span></h1>
+                </div> 
+            </div>
+        </div>
+        <!-- About -->
+        <div id = "about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/Logo.png">
+                    </div>
+                     <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi this is a sample text written here.</p>
+                        <div class = "tab-titles">
+                            <p class = "tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class = "tab-links" onclick="opentab('Expirence')">Expirence</p>
+                            <p class = "tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills"> 
+                            <ul>
+                                <li><span>UI/UX</span><br> Desigining Web-App interfaces</li>
+                                <li><span>Web Development</span><br> Web App Development</li>
+                                <li><span>App Development</span><br> Worked on App Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Expirence"> 
+                            <ul>
+                                <li><span>Sept 2021 - July 2023</span><br> Quality Analyst at MTX</li>
+                                <li><span>May 2021 - Aug 2021</span><br> Quality Analusy Intern at MTX</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education"> 
+                            <ul>
+                                <li><span>Aug 2023 - May 2025</span><br> Masters in Computer Science from University of Maryland, Baltimore County(UMBC)</li>
+                                <li><span>July 2017 - June 2021</span><br>B.Tech in Computer Science from B.V Raju Institute of Technology </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service -->
+        <div id = "services">
+            <div class = "container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Creating a new web Design</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Creating a new web Design Learning new things in the web desig</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Creating a new app desingn for the book  store donation system</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src ="Images/Logo 1.png">
+                        <div class = "layer"> 
+                            <h3>My Project 1</h3>
+                            <p>Need to add about my project details here.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src ="Images/Logo.png">
+                        <div class = "layer"> 
+                            <h3>My Project 2</h3>
+                            <p>Need to add about my project details here.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src ="Images/Logo 1.png">
+                        <div class = "layer"> 
+                            <h3>My Project 3</h3>
+                            <p>Need to add about my project details here.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>
