@@ -16,17 +16,37 @@
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#services">services</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
-                <div class = "header-text">
+                <!-- <div class = "header-text", id="header-myDetails">
                     <h1>Hi, i'm <span>Vivek</span></h1>
                     <p>I am Currently Interested in Web Developer</p>
                 </div> 
+                <div class = "my-photo", id="header-myphoto">
+                    <img src="Images/MyPhoto.jpg", class="logo">
+                </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- My Details -->
+        <div id = "my-details">
+            <div class="container">
+                <div class="row">
+                    <div class="my-details-left">
+                        <h1>Hi, i'm <span>Vivek</span></h1>
+                        <p>I am Currently Interested in Web Developer</p>
+                    </div>
+                    <div class="my-details-right">
+                        <img src="Images/MyPhoto.jpg">
+                    </div>
+
+                </div>
             </div>
         </div>
         <!-- About -->
@@ -34,11 +54,11 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="Images/Logo.png">
+                        <img src="Images/MyPhoto.jpg">
                     </div>
                      <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>Hi this is a sample text written here.</p>
+                        <p>I am a Passoniate Web Developer.</p>
                         <div class = "tab-titles">
                             <p class = "tab-links active-link" onclick="opentab('Skills')">Skills</p>
                             <p class = "tab-links" onclick="opentab('Expirence')">Expirence</p>
@@ -46,21 +66,44 @@
                         </div>
                         <div class="tab-contents active-tab" id="Skills"> 
                             <ul>
-                                <li><span>UI/UX</span><br> Desigining Web-App interfaces</li>
-                                <li><span>Web Development</span><br> Web App Development</li>
-                                <li><span>App Development</span><br> Worked on App Development</li>
+                                <!-- <li><span>UI/UX</span><br> Desigining Web-App interfaces</li> -->
+                                <li><span>Web Development</span><br> HTML, CSS, JS, React.</li>
+                                <li><span>Quality Analyst</span><br> Manual Testing, Automation Testing, Selenium with Java.</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="Expirence"> 
                             <ul>
-                                <li><span>Sept 2021 - July 2023</span><br> Quality Analyst at MTX</li>
-                                <li><span>May 2021 - Aug 2021</span><br> Quality Analusy Intern at MTX</li>
+                                <li>
+                                    <span>MTX Group Inc.</span><br>
+                                    <span>Quality Analyst (Sept, 2021 - July, 2023 )</span><br>
+                                    <ul>
+                                        <li>• Worked Worked on multiple licensing projects as a QA tester, focusing on creating detailed-oriented test cases by analyzing documented requirements and user stories.</li>
+                                        <li>• Served as a QA lead on several projects, taking full responsibility for my QA team. Received excellent feedback for our collective work, including successful collaboration with BA and development teams for requirement implementation and defect resolution.</li>
+                                        <li>• Possess a strong understanding of Salesforce basics. Additionally, I have developed automation scripts for licensing projects using Selenium with Java.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>MTX Group Inc.</span><br> 
+                                    <span>Quality Analyst Intern (May, 2021 - July, 2021)</span><br>
+                                    <ul>
+                                        <li>• Salesforce Cloud Exposure: "Gained exposure to Salesforce cloud fundamentals, including the use of Triggers, SOQL, Validation Rules, Apex Classes, and Flows. This experience provided a solid foundation in Salesforce platform capabilities</li>
+                                        <li>• Contributed to several automation projects utilizing Selenium with Java, focusing on enhancing efficiency and accuracy in testing processes. </li>
+                                        <li>• Developed proficiency in Selenium, Salesforce Basics, and SOQL, strengthening my technical skill set and preparing me for complex problem-solving in real-world applications. </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="Education"> 
                             <ul>
-                                <li><span>Aug 2023 - May 2025</span><br> Masters in Computer Science from University of Maryland, Baltimore County(UMBC)</li>
-                                <li><span>July 2017 - June 2021</span><br>B.Tech in Computer Science from B.V Raju Institute of Technology </li>
+                                <li><span>Masters in Computer Science.</span><br> 
+                                <span>University of Maryland, Baltimore County.</span><br>
+                                <span>August 2023 - May 2025</span>
+                                </li>
+
+                                <li><span>Bachelors in Computer Science.</span><br>
+                                <span>B.V Raju Institute of Technology, Narsapur, Telangana.</span><br>
+                                <span>July 2017 - June 2021</span> 
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -134,8 +177,8 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class = "sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
-                        <p><i class="fa-solid fa-square-phone"></i>9894849749</p>
+                        <p><i class="fa-solid fa-paper-plane"></i>lakshmj2@umbc.edu</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+1 (410) 627-8205</p>
                         <div class="social-icons">
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
